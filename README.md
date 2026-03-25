@@ -26,7 +26,13 @@ State and actions live together, making the store easy to manage
 It performs efficiently even with large datasets (500+ tasks)
 
 # Virtual Scrolling
+To handle large datasets efficiently, I implemented my own virtual scrolling:
 
+Created a scrollable container with fixed height
+Used a spacer div to simulate full height
+Calculated visible rows based on scroll position
+Rendered only ~15–20 items at a time
+Added buffer rows to avoid flickering
 
 # Drag-and-Drop
 
